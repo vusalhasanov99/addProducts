@@ -1,0 +1,24 @@
+.gray{
+    background-color: rgba(128, 128, 128, 0.164);
+}
+.border-red{
+    border: 1px solid red;
+}
+h2{
+    text-align: center;
+    margin: 20px;
+}
+td{
+  font-weight: 600;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

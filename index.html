@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ba9c5d0e6.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Məhsullar</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
+            <a href="#" class="navbar-brand">Məhsullar</a>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input oninput="borderRed()" type="text" class="form-control" id="name" placeholder="Məhsulun adı">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input oninput="borderRed()" type="number" class="form-control" id="price" placeholder="Məhsulun qiyməti (AZN)">
+                        </div>
+                    </div>
+                    <button id="add" type="submit" class="btn btn-primary btn-sm add">
+                        <i class="fas fa-plus"></i>
+                        Əlavə et
+                    </button>
+                    <button id="save" type="submit" class="btn btn-warning btn-sm d-none">
+                        <i class="far fa-edit"></i>
+                        Yadda saxla
+                    </button>
+                    <button id="del" type="submit" class="btn btn-danger btn-sm d-none">
+                        <i class="fas fa-times"></i>
+                        Sil
+                    </button>
+                    <button id="cancel" type="submit" class="btn btn-secondary btn-sm d-none">
+                        <i class="fas fa-arrow-circle-left"></i>
+                        ləğv edin
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="card mt-3">
+            <table class="table">
+                <tbody id="item-list">
+                    <h2 class="no-product">Məhsul əlavə edilməyib</h2>
+                    <!-- <tr>
+                        <td>0</td>
+                        <td>Monitor</td>
+                        <td>100 $</td>
+                        <td class="text-end">
+                            <button id="change" type="submit" class="btn btn-warning btn-sm">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <div class="card mt-3">
+            <div class="card-footer text-end ">
+                <p>Ümumi qiymət(AZN) <strong class="total-price-manat">0 AZN</strong> </p>
+                <p>Ümumi qiymət($) <strong class="total-price-dollar">0 $</strong> </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
