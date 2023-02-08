@@ -100,7 +100,7 @@ product()
 
 
 function productNotAdded() {
-    if (itemList.children.length > 0) {
+    if (itemList.children.length > 1) {
         noProduct.classList.add("d-none")
     }
     else {
